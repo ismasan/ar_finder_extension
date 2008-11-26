@@ -1,0 +1,13 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/ar_finder_extension.rb
+script/console
+script/destroy
+script/generate
+spec/ar_finder_extension_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
+tasks/rspec.rake
