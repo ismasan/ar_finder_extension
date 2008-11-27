@@ -1,26 +1,39 @@
 = ar_finder_extension
 
-* FIX (url)
+http://github.com/ismasan/ar_finder_extension/tree
 
 == DESCRIPTION:
 
-FIX (describe your package)
+A skeleton gem to test different conventions for extending ActiveRecord.
+
+The test gem overrides ActiveRecord::Base.find to search by title instead of ID.
+
+It scopes correclty when used in collections.
+
+   Post.find "some post"
+
+   @user.posts.find "some post" # scopes SQL query to user_id
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+THIS IS NOT PRODUCTION-READY CODE.
 
-== SYNOPSIS:
+The intent of this is to try out different approaches to extending ActiveRecord, as a testbed to refactoring other libraries or writing new ones.
 
-  FIX (code sample of usage)
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+ActiveRecord. Rspec for the test suite.
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+Git clone it.
+
+== TEST:
+
+rake db:create # creates sqlite3 test db file under spec/db/
+
+rake spec
 
 == LICENSE:
 
